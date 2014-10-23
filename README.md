@@ -19,4 +19,11 @@ The following steps are needed before you can proceed with data transfer.
 * 
 * Start an instance of a virtual machine on Atmosphere, a guide can be found [here](https://pods.iplantcollaborative.org/wiki/display/atmman/Stopping+and+Starting+an+Instance). I usually start an Ubuntu VM, as I am familiar with Linux/Unix command line. You can choose what suits you, but the rest of the guide assumes you have chosen a linux/unix VM.
 
-You must create a volume (guide [here](https://pods.iplantcollaborative.org/wiki/display/atmman/Creating+a+Volume)), and then mount that volume to your Atmosphere instance.
+You must create a volume (guide [here](https://pods.iplantcollaborative.org/wiki/display/atmman/Creating+a+Volume)), and then mount (guide [here](https://pods.iplantcollaborative.org/wiki/display/atmman/Creating+a+Volume)). that volume to your Atmosphere instance.
+
+Once the VM is initiallised, this can take 30 mins to 1 hour, you will get an email telling you that the VM is ready. At this point you should:
+
+* Find the IP address of the machine, you can find this on iPlant Atmosphere under the "My Instances" panel, or in the email that iPlant send confriming your instances is running.
+* log on from your desktop terminal to the iPlant VM using something like: username@IP.address, password is your iplant password. 
+
+You should now be connected to your VM via ssh. In order to send data to the iPlant Data Store you need to mount the data store in one of your directories. This is the confusing part and the main point of this guide. 
