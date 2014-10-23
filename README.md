@@ -24,6 +24,6 @@ You must create a volume (guide [here](https://pods.iplantcollaborative.org/wiki
 Once the VM is initiallised, this can take 30 mins to 1 hour, you will get an email telling you that the VM is ready. At this point you should:
 
 * Find the IP address of the machine, you can find this on iPlant Atmosphere under the "My Instances" panel, or in the email that iPlant send confriming your instances is running.
-* log on from your desktop terminal to the iPlant VM using something like: username@IP.address, password is your iplant password. 
+* log on from your desktop terminal to the iPlant VM using ssh and a command something like: username@IP.address, your iPlant password is required to log on. 
 
 You should now be connected to your VM via ssh. In order to send data to the iPlant Data Store you need to mount the data store in one of your directories. This is the confusing part and the main point of this guide. 
