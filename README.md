@@ -73,5 +73,5 @@ irodsFs myfolder/ -o max_readahead=0
 
 Now if you *cd* to the *myfolder* you should see the contents of */iplant/home/user* in that directory.
 
-***FTP from Berkely to the mounted iPlant Data store***
+***FTP from Berkeley to the mounted iPlant Data store***
 
