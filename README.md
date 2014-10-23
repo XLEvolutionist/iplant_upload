@@ -37,7 +37,7 @@ You should now be connected to your VM via ssh. In order to send data to the iPl
 * In the location you like (I picked my home dir) you should set up a folder in which the iPlant Data Store will be mounted.
 * Secondly, set up IRODS (a description is [here](https://pods.iplantcollaborative.org/wiki/display/DS/Using+iCommands#UsingiCommands-InitiatingtheiRODSconnectionandconfiguringthesettings%28Onetimeonly%29). iRODS essentially allows you to mount the iPlant Data store and use [iCommands](https://pods.iplantcollaborative.org/wiki/display/DS/Using+iCommands) and must be activated before you can transfer data. You can do this using the iCommand *iinit*, as detailed below.
 
-
+```
     bash-3.2$ iinit
     One or more fields in your iRODS environment file (.irodsEnv) are
     missing; please enter them.
@@ -49,7 +49,7 @@ You should now be connected to your VM via ssh. In order to send data to the iPl
     other i-commands) if the login succeeds.
     Enter your current iRODS password:password
     bash-3.2$
-    
+```   
 
 
 
