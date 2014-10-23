@@ -7,8 +7,14 @@ This process is somewhat confusing for users who are not familiar with iPlant At
 <br>
 [1] document what commands I have used and keep track of the most efficient method for moving data to iPlant from the FTP server.
 <br>
-[2] Hompefully provide at rough guide to other users in the RILAB to aid in transfer of data in the future.
+[2] Hompefully provide a rough guide to other users in the RILAB to aid in transfer of data in the future.
 
 There is a very good duide already written at this [This link](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2Fmfcovington%2Fucd_plantbio_tutorials%2Fblob%2Fmaster%2Fiplant%2Fiplant_data_store.tutorial.mdown%23bonus-material-mounting-irods-via-atmosphere-instance&sa=D&sntz=1&usg=AFQjCNE4pVn_cv9v8C2rHx4e-JKZIBbBhA)
 
-The following steps are needed befier you can proceed with data transfer. 
+The following steps are needed before you can proceed with data transfer. 
+
+* Set up an iPlant account [here](http://www.iplantcollaborative.org).
+* 
+* Request access to Atmosphere [here] (http://www.iplantcollaborative.org/ci/atmosphere)
+* 
+* Start an instance of a virtual machine on Atmosphere, a guide can be found [here](https://pods.iplantcollaborative.org/wiki/display/atmman/Stopping+and+Starting+an+Instance)
