@@ -78,6 +78,8 @@ Now if you *cd* to the *myfolder* you should see the contents of */iplant/home/u
 Now you are connected via *ssh* and have mounted the iPlant Data store to *myfolder* and it is time to use FTP to transfer data from Berekely. Info about logging on to the FTP server can be found [here](https://github.com/SinhaLab/Scripts-and-Protocols/blob/master/RNAseq/Instructions/iplant.FTP.SSH.md).
 
 
+**You must cd to the iPlant data directory where you want the files to be saved**
+
 Example:
 
 ftp: islay.qb3.berkeley.edu login: GSLUSER psswd: ********* 
