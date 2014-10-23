@@ -17,6 +17,6 @@ The following steps are needed before you can proceed with data transfer.
 * 
 * Request access to Atmosphere [here] (http://www.iplantcollaborative.org/ci/atmosphere).
 * 
-* Start an instance of a virtual machine on Atmosphere, a guide can be found [here](https://pods.iplantcollaborative.org/wiki/display/atmman/Stopping+and+Starting+an+Instance). I usually start a Unubtu VM, as I am familiar with Linux/Unix command line. You can choose what suits you but the rest of the guide assumes you have chosen a linux/unix VM.
+* Start an instance of a virtual machine on Atmosphere, a guide can be found [here](https://pods.iplantcollaborative.org/wiki/display/atmman/Stopping+and+Starting+an+Instance). I usually start an Ubuntu VM, as I am familiar with Linux/Unix command line. You can choose what suits you, but the rest of the guide assumes you have chosen a linux/unix VM.
 
 You must create a volume (guide [here](https://pods.iplantcollaborative.org/wiki/display/atmman/Creating+a+Volume)), and then mount that volume to your Atmosphere instance.
