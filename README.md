@@ -23,7 +23,7 @@ The following steps are needed before you can proceed with data transfer.
 
 You must create a volume (guide [here](https://pods.iplantcollaborative.org/wiki/display/atmman/Creating+a+Volume)), and then mount (guide [here](https://pods.iplantcollaborative.org/wiki/display/atmman/Creating+a+Volume)). that volume to your Atmosphere instance.
 
-***logging on to hte VM using ssh***
+***Logging on to the VM using ssh***
 
 Once the VM is initiallised, this can take 30 mins to 1 hour, you will get an email telling you that the VM is ready. At this point you should:
 
