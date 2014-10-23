@@ -75,3 +75,50 @@ Now if you *cd* to the *myfolder* you should see the contents of */iplant/home/u
 
 ***FTP from Berkeley to the mounted iPlant Data store***
 
+Now you are connected via *ssh* and have mounted the iPlant Data store to *myfolder* and it is time to use FTP to transfer data from Berekely. Info about logging on to the FTP server can be found [here](https://github.com/SinhaLab/Scripts-and-Protocols/blob/master/RNAseq/Instructions/iplant.FTP.SSH.md).
+
+
+Example:
+
+ftp: islay.qb3.berkeley.edu login: GSLUSER psswd: ********* 
+
+Open terminal in iplant and type in
+
+```
+ftp islay.qb3.berkeley.edu
+```
+Enter your user name and password. You should see:
+```
+ftp> 
+```
+iplant only works in FTP passive mode. So switch to passive mode.
+```
+passive
+```
+Then change to the directory where the file is
+```
+cd /VCGSL_FTP/140204_HS3B
+```
+The further directory is under the PIs name.
+
+Turn off interactive mode, so you don't have to approve every file transfer.
+```
+prompt
+```
+
+cd to the directory containing the files you are interested in.
+```
+cd dir
+```
+
+Use the mget command with wildcard to specify to download all files in the dir and then send this to the folder you want.
+
+```
+mget * ~/myfolder
+To quit the FTP connection
+```
+don;t forget to exit your session
+
+```
+quit
+```
