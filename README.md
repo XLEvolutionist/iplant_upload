@@ -34,7 +34,11 @@ Once the VM is initiallised, this can take 30 mins to 1 hour, you will get an em
 
 You should now be connected to your VM via ssh. In order to send data to the iPlant Data Store you need to mount the data store in one of your directories. This is the confusing part and the main point of this guide. I'm sure there are many ways to achieve this but this is what I did to set up the data store in my home directory.
 
-* In the location you like (I picked my home dir) you should set up a folder in which the iPlant Data Store will be mounted.
+* In the location you like (I picked my home dir) you should set up a folder in which the iPlant Data Store will be mounted:    
+```
+mkdir myfolder
+```
+
 * Secondly, set up iRODS (a description is [here](https://pods.iplantcollaborative.org/wiki/display/DS/Using+iCommands#UsingiCommands-InitiatingtheiRODSconnectionandconfiguringthesettings%28Onetimeonly%29). iRODS essentially allows you to mount the iPlant Data store and use [iCommands](https://pods.iplantcollaborative.org/wiki/display/DS/Using+iCommands) and must be activated before you can transfer data. You can do this using the iCommand *iinit*, as detailed below. The responses are fixed, and are indicated below.
 
 ```
@@ -51,5 +55,23 @@ You should now be connected to your VM via ssh. In order to send data to the iPl
     bash-3.2$
 ```   
 
+Now you should be ready to mount the iPlant directory of your choice.
 
+Firstly, use the iCommand *icd* to migrate to the iPlant data store directoiry that you wan't to mount.
+
+```
+icd /iplant/home/user
+ipwd
+/iplant/home/user
+```
+
+now use the *irodsFs* to mount the *ipwd* to the *myfolder* directory.
+
+```
+irodsFs myfolder/ -o max_readahead=0
+```
+
+Now if you *cd* to the *myfolder* you should see the contents of */iplant/home/user* in that directory.
+
+***FTP from Berkely to the mounted iPlant Data store***
 
